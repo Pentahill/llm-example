@@ -8,7 +8,7 @@ from configuration_internlm import InternLMConfig
 class Inferencer:
 
     def __init__(self) -> None:
-        self.tokenizer = InternLMTokenizer("./tokenizer.model", '<unk', '<s>', '</s>', '</s>')
+        self.tokenizer = InternLMTokenizer("tokenizer.model", '<unk', '<s>', '</s>', '</s>')
 
         # tokens = tokenizer.tokenize("How are you?")
         # print(tokens)
